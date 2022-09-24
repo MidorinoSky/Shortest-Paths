@@ -1,7 +1,7 @@
-﻿#include "stdio.h"
+﻿#include<stdio.h>
 #include<stdlib.h>
 #include<vector>
-#include <iostream>
+#include<iostream>
 #include<string>
 #include<map>
 #include<conio.h>
@@ -174,22 +174,6 @@ void printPathResult(int start, int end, FILE* fp) {
 
 	fprintf(fp, "\n---------------------------------\n");
 }
-
-/*vector<string> V;
-// 函数功能：打印并保存 v0->o 的所有最短路径
-// cur字符串作递归辅助用，首次调用务必使cur为空串
-void Print_Path(int start, int end, string cur = "") {
-	cur += end + '0';
-	if (end == start) { //退出递归的条件：起点==终点，输出路径，保存至V数组
-		reverse(cur.begin(), cur.end());
-		cout << cur << endl;
-		V.push_back(cur);
-		return;
-	}
-	for (int i = 0; i < P[end].size(); i++)
-		Print_Path(start, P[end][i], cur);
-}
-*/
 
 void menu() {
 	printf("\n----------------------------------------------\n");
